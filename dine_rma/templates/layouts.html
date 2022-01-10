@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <!-- <h1>welcome from layout {{ message }}</h1> -->
+    <!-- {% block content %}{% endblock %} -->
+    {% for item in all_items %}
+        {{ item.id }}<br>
+        {{ item.name }}<br>
+        {{ item.location }}<br>
+        {{ item.intro }}
+    {% endfor %}
+
+
+</body>
+</html>
