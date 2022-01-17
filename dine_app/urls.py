@@ -21,5 +21,6 @@ from dine_rma import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('dine_rma.urls'))
+    path('', include('dine_rma.urls')) # eta maane django bujhbe jekono request '' diye start holei seta
+    #dine_rma.urls e chole jabe
 ]

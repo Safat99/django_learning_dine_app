@@ -6,5 +6,6 @@ urlpatterns = [
     # path('<a>', views.home, name="home") # in episode 3 url theke msg web browser e show koranor jonno
     # path('/)
     path('', views.home, name='home'),
-    path('about/', views.about, name='about')
-]
+    path('about/', views.about, name='about'),
+    path('hello/', views.say_hello )
+ ]

@@ -18,3 +18,9 @@ def home(request):
 def about(request):
     message = 'This is about page'
     return render(request, 'about.html', {'message':message})
+
+
+def say_hello(request):
+    x = 1
+    y = 2
+    return render(request, 'hello.html', {'name':'Mosh'})
